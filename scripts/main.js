@@ -23,80 +23,35 @@ console.log('Sales is een uitdagende afdeling om te werken als Verkoopmanager. '
 
 // Opdracht 2 + 4
 
-const whichDepartment = prompt('Over welke afdeling wil je meer informatie? Kies uit: [marketing / sales / customer-service]');
+const getDepartment = prompt('Over welke afdeling wil je meer informatie? Kies uit: [marketing / sales / customer-service]');
 
-if (whichDepartment === 'marketing') {
+if (getDepartment === 'marketing') {
     console.log(departments.marketing.description);
-} else if (whichDepartment === 'sales') {
+} else if (getDepartment === 'sales') {
     console.log(departments.sales.description);
-} else if (whichDepartment === 'customer-service') {
+} else if (getDepartment === 'customer-service') {
     console.log(departments['customer-service'].description);
 } else {
     console.error('Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.')
     document.getElementById('error-message').textContent = 'Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.';
 }
 
-console.log(`${whichDepartment} is een leuke afdeling om te werken. Er werken op dit moment ${departments[whichDepartment].numberOfEmployees} medewerkers.`);
+console.log(`${getDepartment} is een leuke afdeling om te werken. Er werken op dit moment ${departments[getDepartment].numberOfEmployees} medewerkers.`);
 
 
 // Opdracht 3
 
-const whichFunction = prompt(`Je koos ${whichDepartment}. Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.
-    \n0: ${departments[whichDepartment].jobs[0].title}
-    \n1: ${departments[whichDepartment].jobs[1].title}
-    \n2: ${departments[whichDepartment].jobs[2].title}
-    \n3: ${departments[whichDepartment].jobs[3].title}`);
+const getFunction = prompt(`Je koos ${getDepartment}. Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.
+    \n0: ${departments[getDepartment].jobs[0].title}
+    \n1: ${departments[getDepartment].jobs[1].title}
+    \n2: ${departments[getDepartment].jobs[2].title}
+    \n3: ${departments[getDepartment].jobs[3].title}`);
 
-document.getElementById('role-title').textContent = departments[whichDepartment].jobs[whichFunction].title;
+document.getElementById('role-title').textContent = departments[getDepartment].jobs[getFunction].title;
 
-document.getElementById('department-description').textContent = departments[whichDepartment].description;
+document.getElementById('department-description').textContent = departments[getDepartment].description;
 
-document.getElementById('role-description').textContent = departments[whichDepartment].jobs[whichFunction].description;
-
-
-
-// switch (whichFunction) {
-//     case '0':
-//         console.log(departments[whichDepartment].jobs[0].description);
-//
-//         document.getElementById('role-title').textContent = departments[whichDepartment].jobs[0].title;
-//
-//         document.getElementById('department-description').textContent = departments[whichDepartment].description;
-//
-//         document.getElementById('role-description').textContent = departments[whichDepartment].jobs[0].description;
-//         break;
-//     case '1':
-//         console.log(departments[whichDepartment].jobs[1].description);
-//
-//         document.getElementById('role-title').textContent = departments[whichDepartment].jobs[1].title;
-//
-//         document.getElementById('department-description').textContent = departments[whichDepartment].description;
-//
-//         document.getElementById('role-description').textContent = departments[whichDepartment].jobs[1].description;
-//         break;
-//     case '2':
-//         console.log(departments[whichDepartment].jobs[2].description);
-//
-//         document.getElementById('role-title').textContent = departments[whichDepartment].jobs[2].title;
-//
-//         document.getElementById('department-description').textContent = departments[whichDepartment].description;
-//
-//         document.getElementById('role-description').textContent = departments[whichDepartment].jobs[2].description;
-//         break;
-//     case '3':
-//         console.log(departments[whichDepartment].jobs[3].description);
-//
-//         document.getElementById('role-title').textContent = departments[whichDepartment].jobs[3].title;
-//
-//         document.getElementById('department-description').textContent = departments[whichDepartment].description;
-//
-//         document.getElementById('role-description').textContent = departments[whichDepartment].jobs[3].description;
-//         break;
-//     default:
-//         console.error('Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.');
-//
-//         document.getElementById('error-message').textContent = 'Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.';
-// }
+document.getElementById('role-description').textContent = departments[getDepartment].jobs[getFunction].description;
 
 
 
