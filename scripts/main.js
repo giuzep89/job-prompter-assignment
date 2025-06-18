@@ -1,14 +1,61 @@
-// console.log(departments);
-
 // Opdracht 1a
 
-console.log('De afdeling sales heeft' + sales.numberOfEmployees + 'medewerkers');
+console.log('De afdeling sales heeft ' + departments.sales.numberOfEmployees + ' medewerkers');
 
 // Opdracht 1b
 
-console.log('Marketing is een leuke afdeling om te werken. ' + marketing.description);
+console.log('Marketing is een leuke afdeling om te werken. ' + departments.marketing.description);
 
 // Opdracht 1c
 
+console.log('De afdeling Customer Service heeft ' + departments['customer-service'].numberOfEmployees + ' medewerkers');
+
 // Opdracht 1d
+
+console.log('Sales is een uitdagende afdeling om te werken als Verkoopmanager. ' + departments.sales.jobs[1].description);
+
+// Opdracht 2a
+
+// const userInput = prompt('Over welke afdeling wil je meer informatie? Kies uit: [marketing / sales / customer-service]');
+//
+// console.log(userInput);
+
+// Opdracht 2b
+
+// if (userInput === 'marketing') {
+//     console.log(departments.marketing.description);
+// } else if (userInput === 'sales') {
+//     console.log(departments.sales.description);
+// } else if (userInput === 'customer-service') {
+//     console.log(departments['customer-service'].description);
+// } else {
+//     console.error('Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.')
+// }
+
+const userInput2 = prompt('Je koos marketing. Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.' +
+    '\n0: ' + departments.marketing.jobs[0].title +
+    '\n1: ' + departments.marketing.jobs[1].title +
+    '\n2: ' + departments.marketing.jobs[2].title +
+    '\n3: ' + departments.marketing.jobs[3].title +
+    '\n4: ' + departments.marketing.jobs[4].title);
+
+switch (userInput2) {
+    case '0':
+        console.log(departments.marketing.jobs[0].description);
+        break;
+    case '1':
+        console.log(departments.marketing.jobs[1].description);
+        break;
+    case '2':
+        console.log(departments.marketing.jobs[2].description);
+        break;
+    case '3':
+        console.log(departments.marketing.jobs[3].description);
+        break;
+    case '4':
+        console.log(departments.marketing.jobs[4].description);
+}
+
+
+
 
