@@ -65,7 +65,7 @@ const departments = {
             },
             {
                 title: "Customer Experience Manager",
-                description: "A Customer Experience Manager is verantwoordelijk voor het creëren en implementeren van strategieën om de algehele klantervaring te verbeteren. Ze analyseren klantinteracties, identificeren pijnpunten en ontwikkelen initiatieven om de klanttevredenheid en -loyaliteit te vergroten. Klantbelevingsmanagers werken samen met verschillende afdelingen om de klantgerichtheid van het bedrijf te verbeteren en klantgerichte processen en beleid te ontwikkelen."
+                description: "Een Customer Experience Manager is verantwoordelijk voor het creëren en implementeren van strategieën om de algehele klantervaring te verbeteren. Ze analyseren klantinteracties, identificeren pijnpunten en ontwikkelen initiatieven om de klanttevredenheid en -loyaliteit te vergroten. Klantbelevingsmanagers werken samen met verschillende afdelingen om de klantgerichtheid van het bedrijf te verbeteren en klantgerichte processen en beleid te ontwikkelen."
             }
         ],
     }
