@@ -12,14 +12,7 @@ console.log('De afdeling Customer Service heeft ' + departments['customer-servic
 
 // Opdracht 1d
 
-console.log('Sales is een uitdagende afdeling om te werken als Verkoopmanager. ' + departments.sales.jobs[1].description);
-
-
-
-
-
-
-
+console.log('Sales is een uitdagende afdeling om te werken als Verkoopmanager. ' + departments.sales.jobs[1].description)
 
 // Opdracht 2 + 4
 
